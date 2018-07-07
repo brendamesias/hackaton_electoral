@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+<body>
+        <nav class="navbar">
+                <a class="navbar-brand whiteText" href="#">
+                  ¿Quién es mi candidato?
+                </a>
+        </nav>
+        <div class="cienVH">
+            <form class="form-inline" style="width: 80%;">
+                <div class="row" style="margin: 0px;width: 100%;">
+                    <div class="col-12">
+                        <label style="display:  inline;" class="my-1 mr-2" for="inlineFormCustomSelectPref">Grado académico</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option value="1">Técnico</option>
+                            <option value="1">Bachiller</option>
+                            <option value="2">Titulado</option>
+                        </select>
+                    </div>
+                </div>
+                 <div class="row" style="margin: 0px;width: 100%;">
+                    <div class="col-12">
+                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                            <input name="experiencialaboral" type="checkbox" class="custom-control-input" id="uno">
+                            <label  style="display:  inline;" class="custom-control-label" for="uno">Experiencia Laboral</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0px;width: 100%;">
+                    <div class="col-12">
+                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                            <input name="experienciacargospublicos" type="checkbox" class="custom-control-input" id="experienciacargospublicos">
+                            <label  style="display:  inline;" class="custom-control-label" for="experienciacargospublicos">Experiencia en cargos de elección popular </label>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row" style="margin: 0px;width: 100%;">
+                        <div class="col-12">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input name="tienedenuncias" type="checkbox" class="custom-control-input" id="tienedenuncias">
+                                <label  style="display:  inline;" class="custom-control-label" for="tienedenuncias">Que no tenga denuncias o sentencias Penales </label>
+                            </div>
+                        </div>
+                    </div>  
+                <div class="row center" style="margin: 0px;width: 100%;">
+                    <div class="col-12 mx-auto center">
+                        <button id="btn"  class="btn btn-primary my-1">Buscar</button>
+                    </div>
+                </div>  
+
+            </form>
+        </div>
+        <section id="team" class="pb-5">
+                <div class="container">
+                    <h5 class="section-title h1">Tus Candidatos</h5>
+                    <div class="row containerCardsCandidatos">
+                        <!-- Team member -->
+                        <div class="cardCandidato">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="mainflip">
+                                        <div class="frontside">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    <p><img class=" img-fluid" src="http://aplicaciones004.jne.gob.pe/PADRON/14/01/42/053445/08315621.jpg" alt="card image"></p>
+                                                    <h4 class="card-title">Jorge Coquis Vega</h4>
+                                                    <p class="card-text">Estudios Universitarios.</p>
+                                                    <p class="card-text">10 años de experiencia en puestos estatales.</p>
+                                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="backside">
+                                            <div class="card">
+                                                <div class="card-body text-center mt-4">
+                                                    <h4 class="card-title">Jorge Coquis Vega</h4>
+                                                    <p class="card-text">Estudios Universitarios.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="mainflip">
+                                            <div class="frontside">
+                                                <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <p><img class=" img-fluid" src="http://aplicaciones004.jne.gob.pe/PADRON/14/01/10/053058/20019176.jpg" alt="card image"></p>
+                                                        <h4 class="card-title">Rosa Calderon Quispe</h4>
+                                                        <p class="card-text">3 veces alcalde provincial</p>
+                                                        <p class="card-text">5 proyectos de ley planteados</p>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="backside">
+                                                <div class="card">
+                                                    <div class="card-body text-center mt-4">
+                                                        <h4 class="card-title">Rosa Calderon Quispe</h4>
+                                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="mainflip">
+                                            <div class="frontside">
+                                                <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <p><img class=" img-fluid" src="http://aplicaciones004.jne.gob.pe/PADRON/14/01/32/050478/10265541.jpg" alt="card image"></p>
+                                                        <h4 class="card-title">Ana yarleque rojas</h4>
+                                                        <p class="card-text">dirigenta comunal y defensora de los derechos de la mujer.</p>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="backside">
+                                                <div class="card">
+                                                    <div class="card-body text-center mt-4">
+                                                        <h4 class="card-title">Ana yarleque rojas</h4>
+                                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+            </section>
+            
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+            <script src="final_data.js"></script>
+            <script src="app.js"></script>
+</head>
+</body>
+</html>
